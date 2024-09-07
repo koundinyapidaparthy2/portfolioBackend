@@ -1,0 +1,8 @@
+/ terraform ( architecture need to design)
+
+.dockerignore remove terraform 
+
+create architecture using terraform 
+then docker image 
+
+deploy in ec2 instance with scaling and 

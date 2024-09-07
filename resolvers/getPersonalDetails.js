@@ -6,7 +6,7 @@ function getPersonalDetails() {
   const githubLink = "https://github.com/koundinyapidaparthy2";
   const portfolioLink = "https://koundinyapidaparthy2.github.io/portfolio";
 
-  const mypersonalDetails = [
+  const moreContactDetails = [
     {
       text: `+1 ${contactNumber}`,
       href: `tel:${contactNumber}`,
@@ -208,7 +208,7 @@ function getPersonalDetails() {
     linkedinLink,
     githubLink,
     portfolioLink,
-    mypersonalDetails,
+    moreContactDetails,
     education,
     experience,
     skills,
