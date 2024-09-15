@@ -78,12 +78,45 @@ const schema = buildSchema(`
     
     type Query {
       getPersonalDetails: PersonalDetails
+      getUserLoginToken(userName: String, password: String): UpdateResponse
     }
     
     type Mutation {
-      updateEntireResume(input: ResumeInput!): UpdateResponse
+      updateEntireResume(input: ResumeInput): UpdateResponse
+      createSessionToken(data: SessionInput): SessionResponse
+      trackSessionToken(trackData: TrackSessionInput): TrackSessionResponse
     }
-    
+
+    input TrackSessionInput {
+      viewed: String
+    }
+     
+    type TrackSessionResponse {
+      error: Boolean
+      message: String
+    }
+    input SessionInput {
+      lat: Float
+      long: Float
+      device: String
+      browser: String
+      network: NetworkInput
+      performance: PerformanceInput
+    }
+
+    input NetworkInput {
+      speed: Float
+      effectiveType: String
+    }
+
+    input PerformanceInput {
+      loadTime: Int
+    }
+
+    type SessionResponse {
+      token: String
+    }
+        
     input ResumeInput {
       contactNumber: String
       contactEmail: String
