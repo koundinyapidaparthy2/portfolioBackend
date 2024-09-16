@@ -53,14 +53,6 @@ function getPersonalDetails() {
 
   const experience = [
     {
-      companyName: "City Experiences",
-      location: "Los Angeles, CA",
-      role: "Software Developer Intern",
-      date: " May 2024 – Sept 2024",
-      points: [
-        "Developed a chatbot application using AWS Serverless APIs and React to integrate into the existing ticketing platform, focusing on creating both the front end and back end to provide users with relevant information based on their inputs.",
-        "Integrated ChatGPT into the ticketing platform to enable sellers to access last year's reports, sales data, and current trends, optimizing the billing dashboard by utilizing AWS SQS and enhancing the UI using React and Figma.",
-      ],
       otherRoles: [
         {
           location: "Jaipur, India",
@@ -71,16 +63,6 @@ function getPersonalDetails() {
             "Customized and optimized ticketing system functionalities, such as reducing the loading time for the checkout page to 3 seconds, using React, GraphQL, Node, Express, Terraform, and AWS, resulting in a more efficient ticketing process for both internal teams and external users.",
           ],
         },
-      ],
-    },
-    {
-      companyName: "Paysfer",
-      role: "Software Developer",
-      location: "Remote",
-      date: " Nov 2023 – May 2024",
-      points: [
-        `Created a single product setup including Venmo, PayPal, and Cash App Payment Integration using the MERN (MongoDB, Express, React, Node) stack to allow customers and resellers to easily make and receive payments on Paysfer’s e-commerce platform.`,
-        `Executed email marketing campaigns using SendGrid, social media marketing campaigns via Twilio for WhatsApp, and managed Google Ads and Facebook Ads marketing efforts, resulting in a 15% increase in the number of customers and sellers on the platform.`,
       ],
     },
     {
