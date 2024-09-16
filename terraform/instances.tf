@@ -2,7 +2,7 @@
 resource "aws_instance" "app" {
   ami           = "ami-12345678" # Choose a free-tier AMI (e.g., Ubuntu 20.04)
   instance_type = "t2.micro"
-  key_name      = aws_key_pair.deployer.key_name
+  key_name      = var.instance_key_name
   security_groups = [aws_security_group.allow_http.name]
 
   user_data = <<-EOF
